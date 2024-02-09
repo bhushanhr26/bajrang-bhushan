@@ -1,0 +1,30 @@
+name: Merge to Develop Workflow
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Build and Test
+      run: npm run build
+
+    - name: Deploy to Development Environment
+      # Add your deployment steps here
+      run: |
+        echo "Deploying to development environment..."
