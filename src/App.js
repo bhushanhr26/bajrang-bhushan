@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import LoginPage from "./components/loginPage/LoginPage";
 
@@ -8,8 +7,8 @@ function App() {
       <LoginPage />
       <h1>Hello world</h1>
       <iframe
-        src="https://www.w3schools.com/html/html_iframe.asp"
-        aria-description="LKFNlskfnfd"
+        src="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjn_Ly594-EAxXkg2MGHT68DZUQPAgJ"
+        title="hello world"
       ></iframe>
     </div>
   );
